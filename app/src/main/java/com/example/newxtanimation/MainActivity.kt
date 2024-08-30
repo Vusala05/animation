@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
                 return object : RecyclerView.ViewHolder(view) {}
             }
             override fun getItemCount(): Int = onboardingItems.size
-
             override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
                 val item = onboardingItems[position]
                 holder.itemView.findViewById<TextView>(R.id.textTitle).text = item.title
