@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.onboarding_item_container, parent, false)
                 return object : RecyclerView.ViewHolder(view) {}
             }
-
             override fun getItemCount(): Int = onboardingItems.size
 
             override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
